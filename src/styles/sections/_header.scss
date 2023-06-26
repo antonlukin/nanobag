@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: auto;
+  padding-top: 2.5rem;
+
+  img {
+    display: block;
+
+    width: 37.5rem;
+    max-width: calc(100% - 4rem);
+    height: auto;
+
+    margin: 0 auto;
+  }
+
+  &.header--fixed {
+    position: fixed;
+    top: 2.5rem;
+    animation: fadein 0.25s forwards linear;
+
+    img {
+      width: 10rem;
+    }
+  }
+}

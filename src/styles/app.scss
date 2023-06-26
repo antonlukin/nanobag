@@ -1,0 +1,58 @@
+$color-background: #0e0e0e;
+$color-foreground: #C09060;
+$color-excerpt: #181716;
+$color-primary: #f0e6de;
+
+$gradient-welcome: radial-gradient(50% 50% at 50% 50%, rgb(124, 182, 234) 0%, rgba(124, 182, 234, 0) 100%);
+
+$width-content: 64rem;
+$width-wide: 84.375rem;
+
+$font-regular: 'Manege', sans-serif;
+$font-inputs: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+@import "config/reset.scss";
+@import "config/fonts.scss";
+@import "config/mixins.scss";
+@import "config/animate.scss";
+
+html {
+  font: 300 16px/1.5 $font-regular;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 359px) {
+    font-size: 12px;
+  }
+}
+
+body {
+  display: block;
+
+  color: $color-foreground;
+  background-color: $color-background;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  transition: color 0.375s, filter 0.375s;
+}
+
+@import "sections/header";
+@import "sections/slider";
+@import "sections/summary";
+@import "sections/excerpt";
+@import "sections/benefits";
+@import "sections/authors";
+@import "sections/feedback";
+@import "sections/footer";
+@import "sections/decor";

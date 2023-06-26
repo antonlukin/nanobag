@@ -1,0 +1,38 @@
+.authors {
+  display: block;
+  position: relative;
+
+  width: $width-wide;
+  max-width: calc(100% - 2rem);
+
+  margin: 1.5rem auto 0;
+  background-color: $color-excerpt;
+  border-radius: 0.5rem;
+
+  figure {
+    display: block;
+    position: relative;
+
+    width: $width-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+
+    font-size: 1.875rem;
+    font-weight: 300;
+    line-height: 1.25;
+
+    strong {
+      font-weight: 300;
+      font-style: normal;
+
+      color: $color-primary;
+    }
+
+    @media screen and (max-width: 479px) {
+      padding: 2rem 1.5rem;
+      font-size: 1.5rem;
+      line-height: 1.375;
+    }
+  }
+}

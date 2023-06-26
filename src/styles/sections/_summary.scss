@@ -1,0 +1,50 @@
+.summary {
+  display: block;
+  position: relative;
+
+  width: $width-wide;
+  max-width: calc(100% - 2rem);
+
+  margin: 3.25rem auto 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.5rem;
+  line-height: 1;
+
+  span {
+    display: block;
+    padding: 1.5rem 0 0.5rem;
+    border-top: solid 1px $color-foreground;
+
+    @media screen and (max-width: 767px) {
+      padding: 0;
+      border-top: 0;
+    }
+  }
+
+  strong {
+    font-weight: 300;
+    font-style: normal;
+
+    color: $color-primary;
+  }
+
+  em {
+    font-weight: 300;
+    font-style: normal;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      padding: 1.25rem 0 0.25rem;
+      border-top: solid 1px $color-foreground;
+    }
+  }
+
+  @media screen and (max-width: 1299px) {
+    font-size: 5.25vw;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 7vw;
+  }
+}
