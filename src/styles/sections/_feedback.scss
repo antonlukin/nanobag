@@ -1,6 +1,7 @@
 .feedback {
   display: block;
   position: relative;
+  z-index: 5;
 
   width: $width-wide;
   max-width: calc(100% - 2rem);
@@ -96,6 +97,92 @@
 
     @media screen and (max-width: 479px) {
       padding: 2rem 1.5rem;
+    }
+  }
+
+  figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: $width-content;
+    max-width: calc(100% - 4rem);
+    margin: 0;
+    padding: 3.25rem 0;
+
+    font-size: 3.75rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $color-background;
+    background-color: $color-foreground;
+    border-radius: 0.5rem;
+
+    transform: translate(-50%, -50%);
+
+    button {
+      cursor: pointer;
+
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+
+      width: 2rem;
+      height: 2rem;
+
+      text-indent: -9999rem;
+
+      background-color: transparent;
+      border: 0;
+
+      transform: rotate(45deg);
+
+      &::after {
+        content: '';
+
+        position: absolute;
+        left: calc(50% - 1px);
+        top: 0;
+        width: 2px;
+        height: 100%;
+
+        background-color: $color-background;
+      }
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 0;
+        height: 2px;
+        width: 100%;
+
+        background-color: $color-background;
+      }
+    }
+
+    p {
+      display: block;
+      max-width: calc(100% - 8rem);
+
+      @media screen and (max-width: 479px) {
+        max-width: calc(100% - 4rem);
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 479px) {
+      padding: 2rem 0;
+      font-size: 2rem;
     }
   }
 }
