@@ -1,4 +1,9 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 (function() {
+  AOS.init()
+
   const header = document.querySelector('.header')
 
   // Header clone

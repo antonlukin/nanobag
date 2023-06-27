@@ -9,14 +9,22 @@
   height: auto;
   padding-top: 2.5rem;
 
-  img {
-    display: block;
+  a {
+    display: flex;
+    justify-content: center;
 
     width: 37.5rem;
     max-width: calc(100% - 4rem);
     height: auto;
 
     margin: 0 auto;
+  }
+
+  img {
+    display: block;
+
+    width: 100%;
+    height: auto;
   }
 
   &.header--fixed {
