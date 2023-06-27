@@ -63,7 +63,7 @@
       }
 
       if (data.message) {
-        return new Error(data.message)
+        throw new Error(data.message)
       }
 
     } catch(error) {

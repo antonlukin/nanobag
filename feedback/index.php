@@ -17,12 +17,7 @@ function send_json($warning, $status = 200) {
 }
 
 function create_text($input) {
-    $text = array();
-
-    $text[] = "<b>Добавлена новая заявка на сумку</b>";
-    $text[] = sprintf("<b>Адрес электронной почты</b>\n%s", htmlspecialchars($input->email));
-
-    return implode("\n\n", $text);
+    return sprintf("<b>Добавлена новая заявка на сумку</b>\n%s", htmlspecialchars($input->email));
 }
 
 function send_message($input) {
@@ -47,6 +42,7 @@ function send_message($input) {
     $answer = json_decode($result, false);
 
     if (empty($answer->ok)) {
+        print_r($answer);
         send_json('Не удалось отправить сообщение', 500);
     }
 
