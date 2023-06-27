@@ -1401,6 +1401,15 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+aos@^3.0.0-beta.6:
+  version "3.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/aos/-/aos-3.0.0-beta.6.tgz#75148e3be4bb1add53f5a1828623bf82b67691e9"
+  integrity sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw==
+  dependencies:
+    classlist-polyfill "^1.2.0"
+    lodash.debounce "^4.0.8"
+    lodash.throttle "^4.1.1"
+
 append-buffer@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/append-buffer/-/append-buffer-1.0.2.tgz#d8220cf466081525efea50614f3de6514dfa58f1"
@@ -1920,6 +1929,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classlist-polyfill@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
+  integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
 
 clean-css@4.2.3:
   version "4.2.3"
@@ -3821,6 +3835,11 @@ lodash.some@^4.2.2:
   resolved "https://registry.yarnpkg.com/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
   integrity sha512-j7MJE+TuT51q9ggt4fSgVqro163BEFjAt3u97IqU+JA2DkWl80nFTrowzLpZ/BnpN7rrl0JA/593NAdd8p/scQ==
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
+
 lodash@^4.17.10, lodash@^4.17.14:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
@@ -5266,11 +5285,6 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-ssr-window@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
-  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
-
 stable@~0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
@@ -5428,13 +5442,6 @@ sver-compat@^1.5.0:
   dependencies:
     es6-iterator "^2.0.1"
     es6-symbol "^3.1.1"
-
-swiper@^9.3.2:
-  version "9.3.2"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.3.2.tgz#f29eddb17f231221c7727372637c44279174a4e1"
-  integrity sha512-Kj9Z4kXRmJR3YT/Wj+XLWj8P6IcRt+WG38uL8M3/Wny7+6sV0TlP9vnE1X+Co9c7VzNooojWGnFa+Wf/9+CUMA==
-  dependencies:
-    ssr-window "^4.0.2"
 
 tapable@^2.1.1, tapable@^2.2.0:
   version "2.2.1"
