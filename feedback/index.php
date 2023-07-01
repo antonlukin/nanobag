@@ -54,7 +54,7 @@ $input = file_get_contents('php://input');
 try {
     $input = json_decode($input, false);
 
-    if (!isset($input->email)) {
+    if (empty($input->email)) {
         send_json('Не заполнено обязательное поле', 400);
     }
 
