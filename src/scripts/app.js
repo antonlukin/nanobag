@@ -53,7 +53,7 @@ import 'aos/dist/aos.css'
 
       form.querySelector('input').value = ''
 
-      const response = await fetch('/feedback/', {
+      const response = await fetch('/nanobag/feedback/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
